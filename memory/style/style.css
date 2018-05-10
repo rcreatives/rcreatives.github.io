@@ -1,0 +1,226 @@
+body{
+
+	background:#1C7430;
+}
+.none{
+	display: none;
+}
+.conteinerStart .img{
+	max-width: 39.3%;
+	max-height: 43.7%;
+	margin:auto;
+	margin-top: 7%;
+}
+.conteinerStart img{
+	width: 100%;
+	height: 100%;
+}
+.conteinerStart .h1{
+	width: 17%;
+	height: 6.3%;
+	margin: auto;
+}
+.conteinerStart h1{
+	width: 100%;
+	height: 100%;
+	opacity: 0.85;
+ 	font-family: 'Open Sans';
+	font-size: 28px;
+	color: #FFFFFF;
+	letter-spacing: 0.2px;
+}
+.conteinerStart .button{
+	width: 11.3%;
+	height: 42px;
+	margin:auto;
+}
+.conteinerStart button:hover{
+	cursor: pointer;
+}
+.conteinerStart button{
+	margin-top: 5.7%;
+	width: 100%;
+	height: 100%;
+	opacity: 0.85;
+	background: #fff;
+	border-radius: 4px;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	color: #1C7430;
+	letter-spacing: 0;
+	border: 0;
+}
+.conteinerEnd .img{
+	max-width: 40.3%;
+	max-height: 45.8%;
+	margin:auto;
+	margin-top: 94px;
+}
+.conteinerEnd img{
+	width: 100%;
+	height: 100%;
+}
+.conteinerEnd .h1{
+	width: 23.8%;
+	height: 11.7%;
+	margin: auto;
+}
+.conteinerEnd h1{
+	width: 100%;
+	height: 100%;
+	opacity: 0.85;
+ 	font-family: 'Open Sans';
+	font-size: 24px;
+	color: #FFFFFF;
+	letter-spacing: 0.15px;
+	line-height: 35px;
+	text-align: center;
+}
+.conteinerEnd .button{
+	width: 10%;
+	height: 42px;
+	margin:auto;
+}
+.conteinerEnd button:hover{
+	cursor: pointer;
+}
+.conteinerEnd button{
+	margin-top: 5.7%;
+	width: 100%;
+	height: 100%;
+	opacity: 0.85;
+	background: #fff;
+	border-radius: 4px;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	color: #1C7430;
+	letter-spacing: 0;
+	border: 0;
+}
+
+.conteinerGame{
+	width:52%;
+	height: 100%;
+	margin: auto;
+}
+.cards{
+	width: 100%;
+	position: relative;
+}
+.card{
+	position: absolute;
+	width: 100px;
+	height: 140px;
+	border-radius: 7px;
+	background-image: url('../images/skb.jpg') ;
+	background-size: 10%;
+	z-index: 1000;
+}
+.card:hover{
+	cursor: pointer;
+}
+.card1{
+	top:40px;
+	left:0px;
+}
+.card2{
+	top:40px;
+	left:120px;
+}
+.card3{
+	top:40px;
+	left:240px;
+}
+.card4{
+	top:40px;
+	left:360px;
+}
+.card5{
+	top:40px;
+	left:480px;
+}
+.card6{
+	top:40px;
+	left:600px;
+}	
+.card7{
+	top:200px;
+	left:0px;
+}
+.card8{
+	top:200px;
+	left:120px;
+}
+.card9{
+	top:200px;
+	left:240px;
+}
+.card10{
+	top:200px;
+	left:360px;
+}
+.card11{
+	top:200px;
+	left:480px;
+}
+.card12{
+	top:200px;
+	left:600px;
+}	
+.card13{
+	top:360px;
+	left:0px;
+}
+.card14{
+	top:360px;
+	left:120px;
+}
+.card15{
+	top:360px;
+	left:240px;
+}
+.card16{
+	top:360px;
+	left:360px;
+}
+.card17{
+	top:360px;
+	left:480px;
+}
+.card0{
+	top:360px;
+	left:600px;
+}	
+.header{
+	width: 100%;
+	height: 20px;
+	margin-top: 60px;
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Open Sans';
+	float: left;
+}
+.restart{
+	float: left;
+	width: 130px;
+	height: 25px;
+}
+
+.points{
+	float: right;
+}
+.restart:hover{
+	cursor: pointer;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.card img{
+	width:100%;
+	height: 100%; 
+	border-radius: 7px;
+}
+.noneCard {
+	opacity: 0;
+}

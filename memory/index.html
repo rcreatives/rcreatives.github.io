@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+</head>
+<body>
+	<div class="conteinerStart" id="start" data-tid="App">
+		<div class="img">
+			<img src="images/StartGame.png" alt="">
+		</div>
+		<div class="h1">
+			<h1>MEMORY GAME</h1>
+		</div>
+		<div class="button">
+			<button id="StartGame" data-tid="NewGame-startGame">Начать игру</button>
+		</div>
+	</div>
+	<div class="conteinerGame none" id="game" data-tid="Deck">
+		<div class="header">
+			<div class="restart" id="restart" data-tid="Menu-newGame">Начать заново</div>
+			<div class="points" >Очки: <span id="points" data-tid="Menu-scores">0</span></div>
+			<div class="cards" id="cards"></div>
+		</div>
+	</div>
+	<div class="conteinerEnd none" id="end">
+		<div class="img">
+			<img src="images/Group.png" alt="">
+		</div>
+		<div class="h1">
+			<h1>Поздравляем!<br>Ваш итоговый счет:  <span id="point"></span></h1>
+		</div>
+		<div class="button">
+			<button id="again" data-tid="EndGame-retryGame">Еще раз</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="javaScript/javascript.js"></script>
+</body>
+</html>
