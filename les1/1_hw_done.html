@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="css//bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div class="wrapper">
+<div class="sample">
+    <form v-if="!formSubmited" @submit.prevent="formSubmited = true">
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" v-model="email">
+        </div>
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" class="form-control" v-model="firstName">
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" v-model="lastName">
+        </div>
+        <div class="form-group">
+            <label>Phone</label>
+            <input type="text" class="form-control" v-model="phone">
+        </div>
+        <div class="form-group">
+            <label>Guests</label>
+            <input type="button" 
+                   class="btn btn-primary" 
+                   value="+"
+                   @click="addGuest"
+                   >
+        </div>
+        <div>
+            <div class="form-group" v-for="(guest, index) in guests">
+                <label @dblclick="deleteGuest(index)">
+                    Guest {{ index + 1 }}
+                </label>
+                <input type="text" class="form-control" v-model="guests[index]">
+            </div>
+        </div>
+        <hr>
+        <button class="btn btn-success">Send Data</button>
+    </form>
+    <div v-else>
+        <h2>All done!</h2>
+        <table class="table table-bordered">
+            <tr>
+                <td>Email</td>
+                <td>{{ email }}</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>{{ fullName }}</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>{{ phone }}</td>
+            </tr>
+            <tr>
+                <td>Guests</td>
+                <td>
+                    <ul class="list-group">
+                        <li class="list-group-item" 
+                            v-for="(guest, index) in guests">
+                            {{ guest }}
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+<script>
+    new Vue({
+        el: '.sample',
+        data: {
+            formSubmited: false,
+            email: '',
+            firstName: '',
+            lastName: '',
+            phone: '',
+            guests: []
+        },
+        computed: {
+            fullName(){
+                return this.firstName + ' ' + this.lastName;
+            }
+        },
+        methods: {
+            addGuest(){
+                this.guests.push('');
+            },
+            deleteGuest(index){
+                this.guests.splice(index, 1);
+            }
+        }
+    });
+</script>
+</body>
+</html>
